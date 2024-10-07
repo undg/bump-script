@@ -8,5 +8,5 @@ NEW_TAG=$(semver -c -i $RELEASE_TYPE $LATEST_TAG)
 echo $RELEASE_TYPE $LATEST_TAG "v$NEW_TAG" $LATEST_SHA
 
 git tag "v$NEW_TAG" $LATEST_SHA
-# git push origin "v$NEW_TAG"
+git push origin "v$NEW_TAG"
 
